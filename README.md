@@ -23,6 +23,7 @@ Una aplicación REST API completa que implementa operaciones CRUD (Create, Read,
 - ✅ Base de datos MySQL
 - ✅ Operaciones CRUD completas
 - ✅ Arquitectura por capas (Controller, Service, Repository)
+- ✅ Validaciones de entrada con Bean Validation
 
 #### Stack Tecnológico:
 - **Framework:** Spring Boot 3.5.5
@@ -81,6 +82,7 @@ Cada proyecto demuestra:
 - Implementación de APIs REST
 - Manejo de bases de datos
 - Arquitectura de aplicaciones
+- Validaciones de entrada y manejo de errores
 - Mejores prácticas de desarrollo
 
 ## 📝 Contribuciones
@@ -92,7 +94,7 @@ Este repositorio está en constante evolución. Se irán agregando más proyecto
 - [ ] Testing con JUnit y Mockito
 - [ ] Documentación con Swagger/OpenAPI
 - [ ] Manejo de excepciones
-- [ ] Validaciones
+- [x] Validaciones
 
 ## 📧 Contacto
 
