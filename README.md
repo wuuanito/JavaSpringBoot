@@ -2,6 +2,24 @@
 
 Este repositorio contiene una colección de proyectos Spring Boot sencillos diseñados como documentación y ejemplos de aprendizaje.
 
+## 📁 Estructura del Repositorio
+
+```
+JavaSpringBoot/
+├── crud/              # Aplicación CRUD básica con gestión de usuarios
+├── jpaproject/        # Implementación avanzada con DTOs y proyecciones
+├── ValidationBasic/   # Validaciones con Bean Validation
+├── kubernetes-crud/   # Aplicación CRUD con configuración para Kubernetes
+└── README.md          # Este archivo
+```
+
+## 🚀 Proyectos Incluidos
+
+### 1. CRUD Application
+**Ubicación:** `/crud`
+
+Una aplicación REST API completa que implementa operaciones CRUD (Create, Read, Update, Delete) para la gestión de usuarios.
+
 
 #### Características:
 - ✅ API RESTful con Spring Boot 3.5.5
@@ -17,6 +35,54 @@ Este repositorio contiene una colección de proyectos Spring Boot sencillos dise
 - **Base de Datos:** MySQL
 - **ORM:** Spring Data JPA
 - **Build Tool:** Maven
+
+#### Estructura del Proyecto:
+```
+crud/
+├── src/main/java/com/api/crud/
+│   ├── controllers/     # Controladores REST
+│   ├── models/         # Entidades/Modelos
+│   ├── repositories/   # Interfaces de repositorio
+│   ├── services/       # Lógica de negocio
+│   └── CrudApplication.java
+└── pom.xml
+```
+
+### 2. JPA Project with DTOs
+**Ubicación:** `/jpaproject`
+
+Proyecto avanzado que demuestra el uso de DTOs (Data Transfer Objects) y proyecciones de Spring Data JPA para optimizar la transferencia de datos.
+
+#### Características:
+- ✅ Implementación de DTOs con Lombok
+- ✅ Proyecciones basadas en clases
+- ✅ Proyecciones basadas en interfaces (abiertas y cerradas)
+- ✅ Separación clara entre entidades y DTOs
+- ✅ Optimización de consultas JPA
+- ✅ Gestión de productos y locales
+
+#### Stack Tecnológico:
+- **Framework:** Spring Boot 3.5.5
+- **Java:** 17
+- **Base de Datos:** MySQL
+- **ORM:** Spring Data JPA
+- **Utilidades:** Lombok
+- **Build Tool:** Maven
+
+#### Estructura del Proyecto:
+```
+jpaproject/
+├── src/main/java/com/dto/jpaproject/
+│   ├── controller/              # Controladores REST
+│   ├── models/                 # Entidades JPA
+│   ├── projection/
+│   │   ├── classbased/        # DTOs basados en clases
+│   │   └── interfacebased/    # Proyecciones de interfaces
+│   ├── repository/            # Repositorios JPA
+│   ├── service/              # Servicios e implementaciones
+│   └── JpaprojectApplication.java
+└── pom.xml
+```
 
 
 
@@ -46,6 +112,8 @@ Cada proyecto demuestra:
 - Manejo de bases de datos
 - Arquitectura de aplicaciones
 - Validaciones de entrada y manejo de errores
+- Patrón DTO y proyecciones JPA
+- Optimización de consultas de base de datos
 - Mejores prácticas de desarrollo
 
 ## 📝 Contribuciones
@@ -58,6 +126,8 @@ Este repositorio está en constante evolución. Se irán agregando más proyecto
 - [ ] Documentación con Swagger/OpenAPI
 - [ ] Manejo de excepciones
 - [x] Validaciones
+- [x] DTOs y Proyecciones JPA
+- [ ] Deployment con Kubernetes
 
 ## 📧 Contacto
 
